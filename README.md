@@ -1,6 +1,6 @@
-# ONT cDNA sequencing analysis
+# ONT cDNA sequencing file processing and transcritome assembly
 
-This repository will take you from basecalling to aligning long-read ONT files (RNA-seq isoform aware analysis). 
+This repository will take you from basecalling, to aligning long-read ONT files (RNA-seq isoform aware analysis), with the end goal of assemnling a representative transcriptome from long-read cDNA.  
 
 ## Dorado Basecalling
 This script converts pod5 sequencing output files to bam (Note: these are not alignment bam files) for downstream demultiplexing.  
