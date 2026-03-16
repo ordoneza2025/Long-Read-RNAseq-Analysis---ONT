@@ -19,6 +19,13 @@ Aling trimmed/filtered reads. Script also uses samtools to filter for aligned re
 
 Output alignment files can be used for quantification, uploaded to genome broswer, or assembled into a transcriptome.  
 
+## Stringtie 
+Processed long reads were aligned to the CSHL GCF_021234435.1 genome assembly using the splice-aware aligner minimap2.
+
+Output alignment files were converted to BAM format, filtered to retain high-quality mappings, and then merged, sorted, and indexed with samtools v1.8. The final merged BAM file was used as input for long-read transcriptome assembly with StringTie v2.2.1. 
+
+The resulting transcript annotation was then merged with the reference RefSeq annotation for GCF_021234435.1, and redundant and single-exon transcripts were removed using GffCompare v0.12.9.
+
 ## Artibeus Jamaicensis Sequencing
 
 Frozen Jamaican fruit bat (Artibeus.jamaicensis) tissues were homogenized by grinding with a pellet pestle (Fisherbrand 12-141-361) under liquid nitrogen. RNA was then extracted from ground homogenized tissues using the Quick-RNA Miniprep Kit (Zymo Research, R1054) according to the manufacturer's protocol for tissue samples. RNA concentration was measured by Qubit with the RNA Broad Range Assay kit (Invitrogen Q10210) and the integrity was assessed by TapeStation (Agilent; High Sensitivity RNA ScreenTape 5067-5579). All samples had RNA integrity (RIN) values between 6.6–7.2 and were used for downstream RNA-sequencing.
