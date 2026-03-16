@@ -7,7 +7,7 @@
 
 ##General Settings
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=anor9792@colorado.edu
+#SBATCH --mail-user=
 #SBATCH --nodes=1
 #SBATCH --ntasks=8
 #SBATCH --mem=24gb
@@ -16,8 +16,8 @@
 
 ##Job name and output
 #SBATCH --job-name=stringtie_long_read
-#SBATCH --output=/scratch/Users/%u/data/eofiles/%x.%j.out
-#SBATCH --error=/scratch/Users/%u/data/eofiles/%x.%j.err
+#SBATCH --output=
+#SBATCH --error=
 
 # Run Stringtie2
 
@@ -27,6 +27,7 @@ pwd; hostname; date
 
 stringtie ${inFile} -p 8 \
 -L #long_read mode \
+--conservative \
 -G ${refFile} \
 -A ${outDir}/.tab #RSEM quantification of transcripts \
 -o ${outDir}/.gtf
