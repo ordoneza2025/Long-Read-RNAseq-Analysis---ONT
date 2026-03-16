@@ -26,6 +26,8 @@ Output alignment files were converted to BAM format, filtered to retain high-qua
 
 The resulting transcript annotation was then merged with the reference RefSeq annotation for GCF_021234435.1, and redundant and single-exon transcripts were removed using GffCompare v0.12.9.
 
+Final GTF transcript annotation for Jamaican fruit bat can be found in Zenodo: 10.5281/zenodo.19022336 
+
 ## Artibeus Jamaicensis Sequencing
 
 Frozen Jamaican fruit bat (Artibeus.jamaicensis) tissues were homogenized by grinding with a pellet pestle (Fisherbrand 12-141-361) under liquid nitrogen. RNA was then extracted from ground homogenized tissues using the Quick-RNA Miniprep Kit (Zymo Research, R1054) according to the manufacturer's protocol for tissue samples. RNA concentration was measured by Qubit with the RNA Broad Range Assay kit (Invitrogen Q10210) and the integrity was assessed by TapeStation (Agilent; High Sensitivity RNA ScreenTape 5067-5579). All samples had RNA integrity (RIN) values between 6.6–7.2 and were used for downstream RNA-sequencing.
